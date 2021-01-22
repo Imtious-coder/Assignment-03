@@ -58,3 +58,23 @@ function hotelCost(day) {
     return result;
 }
 //  console.log(hotelCost(21));
+
+
+
+
+// Problem-04(Largest Name Finding System)
+
+function megaFriend(names) {
+    var mainLength = names[0].length;
+    var place = 0
+    for (var i = 1; i < names.length; i++) {
+        if (mainLength < names[i].length) {
+            mainLength = names[i].length;
+            place = i;
+        } 
+    }
+    return names[place];
+}
+// var names = ["Nihal", "Sakin", "Niloy"];
+// var largestName = megaFriend(names);
+// console.log(largestName);
