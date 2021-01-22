@@ -36,3 +36,25 @@ function budgetCalculator(ghori, phone, laptop) {
     return totalBudget;
 }
 // console.log(budgetCalculator(9, 2, 5,));
+
+
+
+
+// Problem-03(Hotel Cost)
+
+function hotelCost(day) {
+    let result;
+    if (day < 0) {
+        return "It can't be negetive dude, you know!"
+    } else if (day <= 10) {
+        result = day * 100;
+        return result;
+    } else if (day > 10 && day <= 20) {
+        result = 1000 + ((day - 10) * 80);
+        return result;
+    } else if (day > 20) {
+        result = 1800 + ((day - 20) * 50)
+    }
+    return result;
+}
+//  console.log(hotelCost(21));
